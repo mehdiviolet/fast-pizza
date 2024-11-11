@@ -37,7 +37,7 @@ function CreateOrder() {
           <label className="sm:basis-40">First Name</label>
           <input
             className="input grow"
-            defaultValue="Mhd"
+            placeholder="Mehdi Khajavi"
             type="text"
             name="customer"
             required
@@ -49,7 +49,7 @@ function CreateOrder() {
           <div className="grow">
             <input
               className="input w-full"
-              defaultValue={Number(1225656)}
+              placeholder="3513636363"
               type="tel"
               name="phone"
               required
@@ -69,7 +69,7 @@ function CreateOrder() {
               className="input w-full"
               type="text"
               name="address"
-              defaultValue="Wash"
+              placeholder="Regina Mergherita, 54"
               required
             />
           </div>
