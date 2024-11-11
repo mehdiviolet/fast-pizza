@@ -17,14 +17,11 @@ function Order() {
   const fetcher = useFetcher();
   useEffect(
     function () {
-      // console.log(fetcher);
       if (!fetcher.data && fetcher.state === 'idle') fetcher.load('/menu');
     },
     [fetcher, order.pizzaId]
   );
 
-  // console.log(fetcher.data);
-  // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
   const {
     id,
     status,
@@ -34,7 +31,6 @@ function Order() {
     estimatedDelivery,
     cart,
   } = order;
-  // console.log(order);
 
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
